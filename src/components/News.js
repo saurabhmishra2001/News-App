@@ -275,43 +275,22 @@ export class News extends Component {
     }
   render() {
     return (
-  
-      <div>
-          <div className='container my-3 '>
+            <div className='container my-3 '>
               <h2>Picture News -Top Headlines</h2>
               <div className='row'>
-                    <div className='col md-4'>
-                        <NewsItem  title="Folsom native identified as third Washington, DC lightning strike victim - KCRA Sacramento" description ="One of the three people who died in a Washington, D.C., lightning strike this week has been identified by family as Northern California native Brooks Lambertson." imageUrl="https://assets1.cbsnewsstatic.com/hub/i/r/2022/08/07/13b85e18-cd47-4701-84bd-b221b140f3af/thumbnail/1200x630/a260f0ac37d6886125c719302cb69eeb/gettyimages-1242335423.jpg" className="card-img-top" alt="This is Picture Image" newsUrl="https://www.kcra.com/article/dc-lightning-strike-victim-identified-folsom-native/40825605"/>
+                 {this.state.articles.map((element)=> {
+                    return <div className='col md-4'  key={element.url}>
+                        <NewsItem title={element.title.slice(0, 45)} description ={element.description} imageUrl={element.urlToImage} className="card-img-top" 
+                            alt="This is Picture Image" newsUrl={element.url}/>
                     </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description" newsUrl="TODO"/>
-                    </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description"/>
-                    </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description"/>
-                    </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description"/>
-                    </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description"/>
-                    </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description"/>
-                    </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description"/>
-                    </div>
-                    <div className='col md-4'>
-                        <NewsItem  title="My title" description ="My description"/>
-                    </div>
-              </div>    
-        </div>
-        </div>
-    )
-  }
-}
+               
+                    } )}    
+                </div>
+            </div>
+        );
+    } 
+}  
+        
+ 
 
 export default News
