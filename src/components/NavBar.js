@@ -23,14 +23,14 @@ export class NavBar extends Component {
                         Category
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a className="dropdown-item" href="/">business</a>
-                        <a className="dropdown-item" href="/">entertainment</a>
-                        <a className="dropdown-item" href="/">general</a>
+                        <a className="dropdown-item" href="/business">Business</a>
+                        <a className="dropdown-item" href="/entertainment">Entertainment</a>
+                        <a className="dropdown-item" href="/general">General</a>
                         <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="/">health</a>
-                        <a className="dropdown-item" href="/">science</a>
-                        <a className="dropdown-item" href="/">sports</a>
-                        <a className="dropdown-item" href="/">technology</a>
+                        <a className="dropdown-item" href="/health">Health</a>
+                        <a className="dropdown-item" href="/science">Science</a>
+                        <a className="dropdown-item" href="/sports">Sports</a>
+                        <a className="dropdown-item" href="/technology">technology</a>
                         </div>
                     </li>
                     </ul>
