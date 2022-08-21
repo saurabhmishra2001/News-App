@@ -1,6 +1,6 @@
 //import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-
+import{Link} from 'react-router-dom'
 export class NavBar extends Component {
   static propTypes = {}
 
@@ -8,7 +8,7 @@ export class NavBar extends Component {
     return (
       <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-success">
-                <a className="navbar-brand" href="/">Picture News </a>
+                <Link className="navbar-brand" to="/">Picture News </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="/navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -16,21 +16,21 @@ export class NavBar extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                            <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle active" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <Link className="nav-link dropdown-toggle active" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Category
-                        </a>
+                        </Link>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a className="dropdown-item" href="/business">Business</a>
-                        <a className="dropdown-item" href="/entertainment">Entertainment</a>
-                        <a className="dropdown-item" href="/general">General</a>
+                        <Link className="dropdown-item" to="/business">Business</Link>
+                        <Link className="dropdown-item" to="/entertainment">Entertainment</Link>
+                        <Link className="dropdown-item" to="/">General</Link>
                         <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="/health">Health</a>
-                        <a className="dropdown-item" href="/science">Science</a>
-                        <a className="dropdown-item" href="/sports">Sports</a>
-                        <a className="dropdown-item" href="/technology">technology</a>
+                        <Link className="dropdown-item" to="/health">Health</Link>
+                        <Link className="dropdown-item" to="/science">Science</Link>
+                        <Link className="dropdown-item" to="/sports">Sports</Link>
+                        <Link className="dropdown-item" to="/technology">technology</Link>
                         </div>
                     </li>
                     </ul>
