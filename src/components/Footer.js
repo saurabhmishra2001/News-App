@@ -1,12 +1,5 @@
 import React from "react";
 
-
-// import InstagramIcon from '@material-ui/core/InstagramIcon';
-// import TwitterIcon from '@material-ui/core/TwitterIcon';
-// import FacebookIcon from '@material-ui/core/FacebookIcon';
-// import LinkedInIcon from '@material-ui/core/LinkedInIcon';
-
-
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
