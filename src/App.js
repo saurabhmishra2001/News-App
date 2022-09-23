@@ -7,6 +7,7 @@ import News from './components/News';
 import Footer from './components/Footer';
 
 
+
 const App = ()=> {
     return (
       <div>
@@ -23,6 +24,8 @@ const App = ()=> {
               <Route exact path="/technology" element={<News key="technology" pageSize={15} country='in' category='technology' />} />
             </Routes>
             <Footer/>
+  
+
       </Router>
 
       </div>
